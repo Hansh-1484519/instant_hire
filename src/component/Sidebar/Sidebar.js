@@ -1,7 +1,18 @@
-import React from 'react'
+import React , {useEffect} from 'react'
+import axios from 'axios'
 import './sidebar.css'
 
 const Sidebar = () => {
+    const getUser = () =>{
+        axios.get("http://refertest.pythonanywhere.com/user/data")
+        .then(response =>{
+            console.log(response.data);
+        })
+    }
+
+    useEffect(()=>{
+        getUser()
+    }, [])
     return (
         <div>
             <div>
