@@ -7,7 +7,7 @@ const Sidebar = () => {
     const getUser = () =>{
         axios.get("http://refertest.pythonanywhere.com/user/data")
         .then(response =>{
-            console.log(response.data.data);
+           // console.log(response.data.data);
             setUser(response.data.data);
         })
     }
