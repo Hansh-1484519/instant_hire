@@ -1,12 +1,14 @@
-import React , {useEffect} from 'react'
+import React , {useEffect, useState} from 'react'
 import axios from 'axios'
 import './sidebar.css'
 
 const Sidebar = () => {
+    const [user, setUser] = useState([])
     const getUser = () =>{
         axios.get("http://refertest.pythonanywhere.com/user/data")
         .then(response =>{
-            console.log(response.data);
+            console.log(response.data.data);
+            setUser(response.data.data);
         })
     }
 
@@ -16,11 +18,11 @@ const Sidebar = () => {
     return (
         <div>
             <div>
-            <img src="https://static.remove.bg/remove-bg-web/6ad52d54336ad62d58e7bd1317d40fb98e377ad5/assets/start-1abfb4fe2980eabfbbaaa4365a0692539f7cd2725f324f904565a9a744f8e214.jpg" alt="BigCo Inc. logo"/>
+            <img src={user.pictureUrl} alt = "user"/>
             </div>
             <div>
-                <span>Hansh Raj Sharma</span>
-                <p>NIT Raipur</p>
+                <span>{user.name}</span>
+                <p>{user.college}</p>
             </div>
         </div>
     );
