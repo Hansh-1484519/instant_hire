@@ -1,9 +1,13 @@
 import './App.css';
+import Button from './component/Button/Button';
+
 
 function App() {
   return (
-    <div className="App">
-      
+    <div>
+      <h2>INSTA-HIRE CAREERS</h2>
+      <p>what do you want to do?</p>
+      <Button/>
     </div>
   );
 }
