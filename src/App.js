@@ -10,8 +10,8 @@ function App() {
       <h2>INSTA-HIRE CAREERS</h2>
       <p>what do you want to do?</p>
       <Button/>
-      <Jobs/>
       <Sidebar/>
+     <Jobs/>
     </div>
   );
 }
