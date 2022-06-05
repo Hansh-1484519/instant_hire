@@ -1,4 +1,17 @@
 .App {
   text-align: center;
 }
+.Container{
+  display : flex;
+}
+.JobsInfo{
+  flex : 5;
+}
+.Info{
+ margin:100px 100px 90px 100px;
+ font-size: 20px;
+}
+.UserInfo{
+  flex : 1;
+}
 

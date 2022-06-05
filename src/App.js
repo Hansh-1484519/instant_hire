@@ -6,12 +6,18 @@ import Sidebar from './component/Sidebar/Sidebar';
 
 function App() {
   return (
-    <div>
-      <h2>INSTA-HIRE CAREERS</h2>
-      <p>what do you want to do?</p>
-      <Button/>
-      <Sidebar/>
-     <Jobs/>
+    <div className="Container">
+      <div className="JobsInfo">
+        <div className='Info'>
+          <h1>INSTA-HIRE CAREERS</h1>
+          <p>what do you want to do?</p>
+          <Button/>
+        </div>
+        <Jobs/>
+      </div>
+      <div className='UserInfo'>
+        <Sidebar/>
+      </div>
     </div>
   );
 }
