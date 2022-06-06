@@ -5,7 +5,7 @@ import "./sidebar.css";
 const Sidebar = () => {
   const [user, setUser] = useState([]);
   const getUser = () => {
-    axios.get(process.env.React_App_User_Api).then((response) => {
+    axios.get(process.env.REACT_APP_USER_API).then((response) => {
       // console.log(response.data.data);
       setUser(response.data.data);
     });

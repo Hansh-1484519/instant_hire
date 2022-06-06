@@ -5,7 +5,7 @@ import './jobs.css'
 const Jobs = () => {
     const [jobData, setJobData] = useState([])
     const getJobData = () =>{
-        axios.get(process.env.React_App_Job_Api)
+        axios.get(process.env.REACT_APP_JOB_API)
         .then(response =>{
           // console.log(response.data.data);
             setJobData(response.data.data)
