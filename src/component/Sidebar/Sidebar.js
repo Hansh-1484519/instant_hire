@@ -16,9 +16,9 @@ const Sidebar = () => {
         getUser()
     }, [])
     return (
-        <div>
-            <div className='UserImage'>
-            <img src={user.pictureUrl} alt = "user"/>
+        <div className='UserDetails'>
+            <div >
+            <img className='UserImage' src={user.pictureUrl} alt = "user"/>
             </div>
             <div className = "UserInfo">
                 <span>{user.name}</span>

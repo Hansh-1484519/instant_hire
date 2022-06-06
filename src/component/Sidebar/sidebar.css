@@ -1,0 +1,21 @@
+.UserDetails{
+    margin: 50px 100px 0 0;
+}
+
+.UserImage{
+    border-radius: 15px;
+    transition: 1s ease;
+}
+
+.UserImage:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 1s ease;
+    }
+.UserInfo{
+    margin-top: 8px;
+    font-size: 20px;
+    line-height: 25px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
