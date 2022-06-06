@@ -17,10 +17,10 @@ const Sidebar = () => {
     }, [])
     return (
         <div>
-            <div>
+            <div className='UserImage'>
             <img src={user.pictureUrl} alt = "user"/>
             </div>
-            <div>
+            <div className = "UserInfo">
                 <span>{user.name}</span>
                 <p>{user.college}</p>
             </div>
