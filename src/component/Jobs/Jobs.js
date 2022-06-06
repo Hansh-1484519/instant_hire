@@ -7,7 +7,7 @@ const Jobs = () => {
     const getJobData = () =>{
         axios.get(process.env.React_App_Job_Api)
         .then(response =>{
-           console.log(response.data.data);
+          // console.log(response.data.data);
             setJobData(response.data.data)
         })
     }
@@ -28,7 +28,7 @@ const Jobs = () => {
             }<br/>
                 <span>skills Required :</span>
                { (job.skills).map(skill => (
-                    <span>{` ${skill} `}</span>
+                    <span key = {skill}>{` ${skill} `}</span>
          ))}<br/>
              </div>
          })}
