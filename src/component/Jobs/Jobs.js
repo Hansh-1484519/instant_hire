@@ -9,7 +9,10 @@ const Jobs = () => {
         .then(response =>{
           // console.log(response.data.data);
             setJobData(response.data.data)
-        })
+        }) 
+        .catch((err) => {
+            console.log(err.message);
+           });
     }
     useEffect(()=>{
         getJobData();
