@@ -5,7 +5,7 @@ import './jobs.css'
 const Jobs = () => {
     const [jobData, setJobData] = useState([])
     const getJobData = () =>{
-        axios.get("http://refertest.pythonanywhere.com/job/openings")
+        axios.get(process.env.React_App_Job_Api)
         .then(response =>{
            console.log(response.data.data);
             setJobData(response.data.data)

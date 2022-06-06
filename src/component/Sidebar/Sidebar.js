@@ -5,7 +5,7 @@ import './sidebar.css'
 const Sidebar = () => {
     const [user, setUser] = useState([])
     const getUser = () =>{
-        axios.get("http://refertest.pythonanywhere.com/user/data")
+        axios.get(process.env.React_App_User_Api)
         .then(response =>{
            // console.log(response.data.data);
             setUser(response.data.data);
