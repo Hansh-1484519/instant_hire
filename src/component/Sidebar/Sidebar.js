@@ -17,7 +17,7 @@ const Sidebar = () => {
   return (
     <div className="UserDetails">
       <div>
-        <img className="UserImage" src={user.pictureUrl} alt="user" />
+        <img className="UserImage" src={user.pictureUrl} alt="user Info" />
       </div>
       <div className="UserInfo">
         <span>{user.name}</span>
